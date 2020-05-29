@@ -4,7 +4,8 @@
     </head>
     <body>
         <script>
-            document.body.innerHTML = "<pre>"+JSON.stringify(window.location+"</pre>")
+            document.body.innerHTML = "<pre>"+JSON.stringify(window.location+"</pre>");
+            document.body.append("<div>"+window.location.pathname+"</div>");
         </script>
     </body>
 </html>
