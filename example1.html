@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>URL Path</title>
+</head>
+
+<body>
+    <script>
+        var protocolNode = document.createElement("div");
+        var hostNode = document.createElement("div");
+        var pathnameNode = document.createElement("div");
+        var searchlNode = document.createElement("div");
+        var portNode = document.createElement("div");
+        var originlNode = document.createElement("div");
+        
+        protocolNode.appendChild(document.createTextNode(window.location.protocol));
+        hostNode.appendChild(document.createTextNode(window.location.host));
+        pathnameNode.appendChild(document.createTextNode(window.location.pathname));
+        searchlNode.appendChild(document.createTextNode(window.location.search));
+        portNode.appendChild(document.createTextNode(window.location.port));
+        originlNode.appendChild(document.createTextNode(window.location.origin));
+
+        document.body.appendChild(protocolNode);
+        document.body.appendChild(hostNode);
+        document.body.appendChild(pathnameNode);
+        document.body.appendChild(searchlNode);
+        document.body.appendChild(portNode);
+        document.body.appendChild(originlNode);
+    </script>
+</body>
+
+</html>
