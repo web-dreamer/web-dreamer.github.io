@@ -32,7 +32,7 @@
             .then(response => response.json())
             .then(data => {
                 console.log("Map Loaded.", data);
-                console.log("checking URL Map", (data[pathnameNode] !== undefined));
+                console.log("checking URL Map", data.hasOwnProperty(window.location.pathname));
             });
     </script>
 </body>
