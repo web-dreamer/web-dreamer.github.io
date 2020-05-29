@@ -12,7 +12,7 @@
         var searchlNode = document.createElement("div");
         var portNode = document.createElement("div");
         var originlNode = document.createElement("div");
-        
+
         protocolNode.appendChild(document.createTextNode(window.location.protocol));
         hostNode.appendChild(document.createTextNode(window.location.host));
         pathnameNode.appendChild(document.createTextNode(window.location.pathname));
@@ -26,6 +26,10 @@
         document.body.appendChild(searchlNode);
         document.body.appendChild(portNode);
         document.body.appendChild(originlNode);
+
+        fetch("urlmap.json")
+            .then(response => response.json())
+            .then(data => console.log(data));
     </script>
 </body>
 
