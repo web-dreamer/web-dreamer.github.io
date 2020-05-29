@@ -1,0 +1,5 @@
+{
+    "/": "/",
+    "/test/example1": "/example1",
+    "/test/example2": "/sample/example1"
+}
