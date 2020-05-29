@@ -27,9 +27,14 @@
         document.body.appendChild(portNode);
         document.body.appendChild(originlNode);
 
+        console.debug("Loading URL Map.");
         fetch("urlmap.json")
             .then(response => response.json())
-            .then(data => console.log(data));
+            .then(data => {
+                console.debug("Map Loaded.")
+                console.log(data);
+                console.log("checking URL Map", data.hasOwnProperty(pathnameNode));
+            });
     </script>
 </body>
 
