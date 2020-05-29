@@ -5,7 +5,10 @@
     <body>
         <script>
             document.body.innerHTML = "<pre>"+JSON.stringify(window.location+"</pre>");
-            document.body.append("<div>"+window.location.pathname+"</div>");
+            document.body.append(new HTMLDivElement("<div>"+window.location.protocol+"</div>"));
+            document.body.append(new HTMLDivElement("<div>"+window.location.host+"</div>"));
+            document.body.append(new HTMLDivElement("<div>"+window.location.pathname+"</div>"));
+            document.body.append(new HTMLDivElement("<div>"+window.location.search+"</div>"));
         </script>
     </body>
 </html>
