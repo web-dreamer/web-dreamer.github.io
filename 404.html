@@ -28,11 +28,11 @@
         document.body.appendChild(originlNode);
 
         console.log("Loading URL Map.");
-        fetch("urlmap.json")
+        fetch("/urlmap.json")
             .then(response => response.json())
             .then(data => {
                 console.log("Map Loaded.", data);
-                console.log("checking URL Map", data.hasOwnProperty(pathnameNode));
+                console.log("checking URL Map", (data[pathnameNode] !== undefined));
             });
     </script>
 </body>
