@@ -1,5 +1,5 @@
 {
     "/": "/",
-    "/test/example1": "/example1",
+    "/post/this-is-a-post": "/example1",
     "/test/example2": "/sample/example1"
 }
